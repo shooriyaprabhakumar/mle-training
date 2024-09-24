@@ -1,0 +1,60 @@
+1. Verify Installation
+----------------------
+conda --version
+
+2. Update Conda
+---------------
+conda update conda
+
+3. Set Up a New Environment
+---------------------------
+conda create --name myenv python=3.9
+conda activate myenv
+
+4. Install Packages
+-------------------
+conda install numpy
+conda install numpy pandas
+conda install numpy=1.19
+
+5. List Installed Packages
+--------------------------
+conda list
+
+6. Search for Packages
+----------------------
+conda search beautifulsoup4
+
+7. Uninstall a Package
+----------------------
+conda remove numpy
+
+8. Save and Load Environments
+-----------------------------
+conda env export > environment.yml
+conda env create --file environment.yml
+
+9. View Environments
+--------------------
+conda info --envs
+conda env list
+
+10. Remove an Environment
+-------------------------
+conda remove --name myenv --all
+
+11. Deactivate an Environment
+-----------------------------
+conda deactivate
+
+12. Create an Environment with a Specific Package
+-------------------------------------------------
+conda create --name science-env scipy
+
+13. Check Channel Priorities
+----------------------------
+conda config --show channels
+
+14. Use a Specific Channel
+--------------------------
+conda install -c conda-forge numpy
